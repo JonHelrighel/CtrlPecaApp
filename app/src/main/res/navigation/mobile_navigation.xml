@@ -22,4 +22,9 @@
         android:name="br.edu.ifsc.aluno.emilianohelrighel.mobile.ctrlcomputador.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/navigation_cad_tipopeca"
+        android:name="br.edu.ifsc.aluno.emilianohelrighel.mobile.ctrlcomputador.ui.tipopeca.CadTipopecaFragment"
+        android:label="@string/title_cad_tipopeca"
+        tools:layout="@layout/fragment_cad_tipopeca" />
 </navigation>

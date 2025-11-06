@@ -6,4 +6,26 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_cad_tipopeca">Cad.Tipopeca</string>
+    <string name="pecas">Peças</string>
+    <string name="n_a">N/A</string>
+    <string name="dpi_do_mouse">Dpi do Mouse</string>
+    <string name="n_a_">N/A</string>
+    <string name="polegadas_do_monitor">Polegadas do monitor</string>
+    <string name="_12_gb">12 Gb</string>
+    <string name="capacidade">Capacidade</string>
+    <string name="rtx_3060">RTX 3060</string>
+    <string name="modelo">Modelo</string>
+    <string name="n_a3">N/A</string>
+    <string name="pot_ncia_da_fonte">Potência da Fonte</string>
+    <string name="asus">Asus</string>
+    <string name="marca">Marca</string>
+    <string name="placa_de_video">Placa de video</string>
+    <string name="pe_a">Peça</string>
+
+    <string-array name="lista_pecas">
+        <item>RTX 3060 12 GB</item>
+        <item>Ssd Kingstom 512 Gb</item>
+    </string-array>
+
+
 </resources>
