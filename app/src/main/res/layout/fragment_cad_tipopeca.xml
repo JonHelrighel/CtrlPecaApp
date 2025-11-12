@@ -12,16 +12,20 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             android:orientation="vertical" >
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/tvNmPeca"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/pe_a" />
 
             <EditText
-                android:id="@+id/editTextText"
+                android:id="@+id/etNmPeca"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -29,13 +33,13 @@
                 android:inputType="text" />
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/tvDeMarca"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/marca" />
 
             <EditText
-                android:id="@+id/editTextText3"
+                android:id="@+id/etDeMarca"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -43,13 +47,13 @@
                 android:inputType="text" />
 
             <TextView
-                android:id="@+id/textView5"
+                android:id="@+id/tvVlPotencia"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/pot_ncia_da_fonte" />
 
             <EditText
-                android:id="@+id/editTextText4"
+                android:id="@+id/etVlPotencia"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -57,13 +61,13 @@
                 android:inputType="number" />
 
             <TextView
-                android:id="@+id/textView10"
+                android:id="@+id/tvDeModelo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/modelo" />
 
             <EditText
-                android:id="@+id/editTextText5"
+                android:id="@+id/etDeModelo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -71,13 +75,13 @@
                 android:inputType="text" />
 
             <TextView
-                android:id="@+id/textView9"
+                android:id="@+id/tvVlCapacidade"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/capacidade" />
 
             <EditText
-                android:id="@+id/editTextText6"
+                android:id="@+id/etVlCapacidade"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -85,13 +89,13 @@
                 android:inputType="number" />
 
             <TextView
-                android:id="@+id/textView7"
+                android:id="@+id/tvVlPolegadas"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/polegadas_do_monitor" />
 
             <EditText
-                android:id="@+id/editTextText7"
+                android:id="@+id/etVlPolegadas"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -99,13 +103,13 @@
                 android:inputType="number" />
 
             <TextView
-                android:id="@+id/textView8"
+                android:id="@+id/tvVlDpi"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/dpi_do_mouse" />
 
             <EditText
-                android:id="@+id/editTextText8"
+                android:id="@+id/etVlDpi"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -113,16 +117,22 @@
                 android:inputType="number" />
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/tvIdTipoPeca"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/pecas" />
 
             <Spinner
-                android:id="@+id/spinner"
+                android:id="@+id/spIdTipoPeca"
                 android:entries="@array/lista_pecas"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnSalvar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Salvar" />
 
         </LinearLayout>
     </ScrollView>
