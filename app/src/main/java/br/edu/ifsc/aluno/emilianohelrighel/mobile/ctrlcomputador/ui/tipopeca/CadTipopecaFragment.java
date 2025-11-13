@@ -65,14 +65,21 @@ public class CadTipopecaFragment extends Fragment {
         //inicializando a fila de requests do SO
         this.requestQueue.start();
 
+        try {
+            this.consultaTiposPeca();
+        } catch (JSONException e) {
+            throw new RuntimeException(e);
+        }
+
         //return default
         return this.view;
     }
 
-
 private void consultaTiposPeca() throws JSONException {
     //requisição para o Rest Server
-    JsonArrayRequest jsonArrayReq = new JsonArrayRequest(
+    JsonArrayRequest jsonArrayReq = null;
+    try {
+       jsonArrayReq = new JsonArrayRequest(
             Request.Method.POST,
             "http://10.0.2.2/tp/conTipoPeca.php",  // Ajuste a URL para o seu PHP
             new JSONArray("[{}]"),
@@ -95,10 +102,8 @@ private void consultaTiposPeca() throws JSONException {
                                 requireContext(),
                                 android.R.layout.simple_spinner_item,
                                 listaTipos);
-                        adapter.setDropDownViewResource(
-                                android.R.layout.simple_spinner_dropdown_item);
                         //colocando o adapter no spinner
-                        spIdTipoPeca.setAdapter(adapter);
+                        this.spIdTipoPeca.setAdapter(adapter);
                     } else {
                         Snackbar mensagem = Snackbar.make(view,
                                 "A consulta não retornou nenhum registro!",
@@ -120,9 +125,11 @@ private void consultaTiposPeca() throws JSONException {
                 mensagem.show();
             }
     );
+    } catch (JSONException e) {throw new RuntimeException(e);}
     //colocando nova request para fila de execução
     requestQueue.add(jsonArrayReq);
 }
+
 // Classe auxiliar para os tipos de peça (adaptada de Perfil)
 
 }
