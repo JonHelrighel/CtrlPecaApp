@@ -226,12 +226,12 @@ private void consultaTiposPeca() throws JSONException {
                 TipoPeca tipoSelecionado = (TipoPeca) spIdTipoPeca.getItemAtPosition(posTipo);
                 peca.setIdTipoPeca(tipoSelecionado.getIdTipoPeca());
 
-                // Mensagem de sucesso
-                Context context = view.getContext();
-                CharSequence text = "Configuração salva com sucesso!";
-                int duration = Toast.LENGTH_SHORT;
-                Toast toast = Toast.makeText(context, text, duration);
-                toast.show();
+                //chamada do web service de cadastro
+                try {
+                    cadastrarPeca(peca);
+                } catch (JSONException e) {
+                    throw new RuntimeException(e);
+                }
 
             } catch (Exception e) {
                 // Tratamento de erro
