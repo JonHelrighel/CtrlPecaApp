@@ -161,22 +161,14 @@ private void consultaTiposPeca() throws JSONException {
                             if (response.getBoolean("success")) {
                                 //limpar campos da tela
                                 this.etNmPeca.setText("");
-                                this.etDeMarca .setText("");
+                                this.etDeMarca.setText("");
                                 this.etVlPotencia.setText("");
-                                this.etDeModelo .setText("");
+                                this.etDeModelo.setText("");
                                 this.etVlCapacidade.setText("");
                                 this.etVlPolegadas.setText("");
                                 this.etVlDpi.setText("");
-                                //primeiro item dos spinners
-                                this.spPerfis.setSelection(0);
-
-                                /*this.etNmPeca = (EditText) view.findViewById(R.id.etNmPeca);
-                                this.etDeMarca = (EditText) view.findViewById(R.id.etDeMarca);
-                                this.etVlPotencia = (EditText) view.findViewById(R.id.etVlPotencia);
-                                this.etDeModelo = (EditText) view.findViewById(R.id.etDeModelo);
-                                this.etVlCapacidade = (EditText) view.findViewById(R.id.etVlCapacidade);
-                                this.etVlPolegadas = (EditText) view.findViewById(R.id.etVlPolegadas);
-                                this.etVlDpi*/
+                                //primeiro item do spinner
+                                this.spIdTipoPeca.setSelection(0);
                             }
                             //mostrando a mensagem que veio do JSON
                             Toast toast = Toast.makeText(
@@ -185,7 +177,7 @@ private void consultaTiposPeca() throws JSONException {
                                     Toast.LENGTH_SHORT);
                             toast.show();
                         } else {
-//mostrar mensagem do response == null
+                            //mostrar mensagem do response == null
                             Snackbar mensagem = Snackbar.make(
                                     view,
                                     "A consulta não retornou nada!",
