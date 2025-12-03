@@ -21,6 +21,7 @@
     <string name="marca">Marca</string>
     <string name="placa_de_video">Placa de video</string>
     <string name="pe_a">Peça</string>
+    <string name="title_contipopeca">Contipopeca</string>
 
     <string-array name="lista_pecas">
         <item>RTX 3060 12 GB</item>

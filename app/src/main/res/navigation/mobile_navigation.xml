@@ -27,4 +27,9 @@
         android:name="br.edu.ifsc.aluno.emilianohelrighel.mobile.ctrlcomputador.ui.tipopeca.CadTipopecaFragment"
         android:label="@string/title_cad_tipopeca"
         tools:layout="@layout/fragment_cad_tipopeca" />
+    <fragment
+        android:id="@+id/navigation_contipopeca"
+        android:name="br.edu.ifsc.aluno.emilianohelrighel.mobile.ctrlcomputador.ui.tipopeca.ContipopecaFragment"
+        android:label="@string/title_contipopeca"
+        tools:layout="@layout/fragment_contipopeca_list" />
 </navigation>
