@@ -59,4 +59,4 @@ public class tipopecaRecyclerViewAdapter extends RecyclerView.Adapter<tipopecaRe
             return super.toString() + " '" + mContentView.getText() + "'";
         }
     }
-}
+} //
