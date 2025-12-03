@@ -12,7 +12,7 @@
         android:title="@string/title_dashboard" />
     <item
         android:id="@+id/navigation_cad_tipopeca"
-        android:icon="@android:drawable/ic_input_add"
+        android:icon="@drawable/ic_launcher_computador_foreground"
         android:title="@string/title_cad_tipopeca" />
 
     <item

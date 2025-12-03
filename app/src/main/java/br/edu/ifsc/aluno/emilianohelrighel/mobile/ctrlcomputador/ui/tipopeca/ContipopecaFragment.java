@@ -13,7 +13,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import br.edu.ifsc.aluno.emilianohelrighel.mobile.ctrlcomputador.R;
-import br.edu.ifsc.aluno.emilianohelrighel.mobile.ctrlcomputador.ui.tipopeca.placeholder.PlaceholderContent;
 
 /**
  * A fragment representing a list of Items.
