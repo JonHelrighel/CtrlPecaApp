@@ -88,7 +88,7 @@ public class ContipopecaFragment extends Fragment implements Response.ErrorListe
         try {
             jsonArrayReq = new JsonArrayRequest(
                     Request.Method.POST,
-                    "http://10.0.2.2/tp/conComputador.php",
+                    "http://10.0.2.2/tp/conPeca.php",
                     new JSONArray("[{}]"),
                     this, this);
         } catch (Exception e) {
